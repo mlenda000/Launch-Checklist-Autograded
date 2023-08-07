@@ -1,7 +1,4 @@
 // Write your JavaScript code here!
-
-const { formSubmission, myFetch, pickPlanet, addDestinationInfo } = require("./scriptHelper");
-
 window.addEventListener("load", function() {
     const form = document.querySelector('form');
 
@@ -32,7 +29,7 @@ window.addEventListener("load", function() {
         let star = planet.star;
         let distance = planet.distance;
         let moons = planet.moons;
-        let imageUrl = planet.imageUrl;
+        let imageUrl = planet.image;
         
         addDestinationInfo(document, name, diameter,star,distance,moons,imageUrl)
         // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
